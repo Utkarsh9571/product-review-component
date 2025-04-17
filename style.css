@@ -125,6 +125,8 @@ body{
         border-top-left-radius: 10px;
     }
     .add-button{
-        content: center;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
     }
 }
