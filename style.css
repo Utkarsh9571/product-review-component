@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.container{
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+.card{
+    display: flex;
+    border-radius: 10px;
+}
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.info{
+    padding: 25px;
+    overflow: hidden;
+}
+.heading{
+    font-size: 0.7em;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 15px;
+}
+.name{
+    font-size: 1.75em;
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.description{
+    font-size: 0.74em;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+.price{
+    display: flex;
+    font-family: Fraunces, serif;
+    margin-bottom: 20px;
+}
+.price h1{
+    color: hsl(158, 36%, 37%);
+    font-size: 1.75em;
+    font-weight: 700;
+}
+.price h2{
+    font-size: 0.74em;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+.add-button{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+}
+.add-button p{
+    font-size: 0.75em;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    color: white;
+    padding: 10px 47px;
+}
+.add-button a{
+    text-decoration: none;
+    color: white;
+}
+#cart{
+    position: relative;
+    top: 10px;
+    left: 40px;
+    width: 23px;
+    height: 13px;
+    padding-left: 10px;
+}
+.add-button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 42%, 18%);
+}
+@media (max-width:525px) {
+    .container{
+        max-width: 425px;
+        margin: 20px;
+    }
+    .card{
+        display: block;
+        max-width: 375px;
+        max-height: 100vh;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .add-button{
+        content: center;
+    }
+}
